@@ -1,10 +1,17 @@
 # calculator.rb
 
 class Calculator
+
+  def initialize(name)
+    @name = name
+  end
+
+
   def start
-    puts "Welcome to the calculator!"
+    puts "Welcome to #{@name} calculator!"
 
     loop do
+
       puts 'Please select an operation: "add", "subtract", "multiply", "divide", or "exit".'
       operation = gets.chomp.downcase
 
@@ -18,7 +25,7 @@ class Calculator
       when "divide"
         get_numbers(:/)
       when "exit"
-        puts "Thank you for using the calculator. Goodbye!"
+        puts "Thank you #{@name} for using the calculator. Goodbye!"
         break
       else
         puts "Invalid operation. Please try again."
