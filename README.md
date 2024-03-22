@@ -16,7 +16,9 @@ Getting Started
 
 Run the app.rb file:
 
-"ruby app.rb"
+```
+ruby app.rb
+```
 
 Choose an operation by typing the corresponding keyword (e.g., "add", "subtract").
 Enter the required numbers when prompted.
@@ -27,6 +29,9 @@ To exit the calculator, type "exit".
 # Testing
 
 Unit tests for the calculator methods are included in the test_calculator.rb file. To run the tests, execute the following command:
-"ruby tests/test_calculator.rb"
+
+```
+ruby tests/test_calculator.rb
+```
 
 - Ruby version: `3.2.1`
